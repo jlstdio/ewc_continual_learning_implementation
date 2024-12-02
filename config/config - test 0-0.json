@@ -1,0 +1,32 @@
+{
+  "basic_info" : {
+    "projectName": "FLT",
+    "testName": "m6 - case 0-0",
+    "note": "",
+    "dataset": "cifar-10",
+    "numClass": 10,
+    "dataset_distribution": "pathological(N=1)",
+    "aggregate_mode": "fedAvg",
+    "testSetPerClient": 0.5,
+    "validationSetPerClient": 0.0,
+    "numClient" : 10,
+    "clientsPerCuda": 5,
+    "updateClientsPerRound": 2,
+    "numClusters": 3,
+    "seed": 42,
+    "startingCuda": 1
+  },
+  "train_info": {
+    "lr": 1e-2,
+    "lr_decay_step": 1,
+    "lr_decay": 1.0,
+    "momentum": 0.9,
+    "epoch": 5,
+    "batch_size": 15,
+    "trainDataSize" : 0.8,
+    "costFunc": "CEloss",
+    "optim" : "SGD",
+    "reg": "None",
+    "model": "testNN"
+  }
+}
